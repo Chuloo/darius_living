@@ -1,0 +1,22 @@
+<div>
+  <div class="left">
+        <form class="well" (submit) = "addReview($event)">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="first_name" class="form-control"  placeholder="first_name" [(ngModel)] ="first_name" name="first_name">
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="last_name" class="form-control"  placeholder="last_name"  [(ngModel)] ="last_name" name="last_name">
+          </div>
+
+          
+          <div class="form-group">
+            <label for="Reviews">Reviews</label>
+            <textarea type="reviews" class="form-control"  placeholder="reviews"  [(ngModel)] ="reviews" name="reviews" cols="30" rows="10"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+  </div>

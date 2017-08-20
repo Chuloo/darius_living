@@ -1,0 +1,20 @@
+.size{
+    background-color: #d9dbdd;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 90px;
+   
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #918f8f;
+    text-align: center;
+}
+
+a.navbar-brand{
+    color: #918f8f;
+    text-align: center;
+}
