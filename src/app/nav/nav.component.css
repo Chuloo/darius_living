@@ -1,20 +1,23 @@
 .size{
     background-color: #d9dbdd;
     border-radius: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    min-height: 90px;
-   
+    margin:0px;
+    min-height: 75px;
+    position: fixed;
+    z-index: 2;
+    width:100%;
 }
 
 .nav.navbar-nav.navbar-right li a {
-    color: #918f8f;
+    color: hsl(0, 2%, 12%);
     text-align: center;
+    margin-top: 15px;
+    font-size: 0.97em;
+    font-family: lato;
 }
 
 a.navbar-brand{
-    color: #918f8f;
+    color: hsl(0, 2%, 12%);
     text-align: center;
+    margin-top: 15px;
 }
