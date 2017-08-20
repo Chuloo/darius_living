@@ -77,9 +77,14 @@ slide img{
 .social i{
     padding:0px 20px;
     color:black;
+    transition: transform 200ms ease-in-out
 }
 .footnote{
     margin-right: 40px;
     margin-bottom: 20px;
     text-align: right;
+}
+.social i:hover{
+    opacity: 0.7;
+    transform: translate(3px, 3px)
 }
