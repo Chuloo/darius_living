@@ -10,11 +10,19 @@
 }
 
 .nav.navbar-nav.navbar-right li a {
-    color: #918f8f;
+    color: #706d6d;
     text-align: center;
 }
 
 a.navbar-brand{
-    color: #918f8f;
+    color: #706d6d;
     text-align: center;
+}
+
+.book{
+   background-color:maroon;
+}
+
+#white{
+    color: white;
 }
