@@ -6,23 +6,28 @@
     margin-top: 0px;
     margin-bottom: 0px;
     min-height: 90px;
+    
    
 }
 
 .nav.navbar-nav.navbar-right li a {
-    color: #706d6d;
+    color: hsl(0, 2%, 12%);
     text-align: center;
+    margin-top: 15px;
+    font-size: 0.97em;
+    font-family: lato;
 }
 
 a.navbar-brand{
-    color: #706d6d;
+    color: hsl(0, 2%, 12%);
     text-align: center;
+    margin-top: 15px;
 }
 
 .book{
-   background-color:maroon;
-}
+    background-color: maroon;
+    }
 
-#white{
-    color: white;
-}
+    #white{
+        color: white;
+    }
