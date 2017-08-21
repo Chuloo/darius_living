@@ -6,7 +6,11 @@ slide img{
     min-width: 100%;
     font-family: lato, roboto;
     padding: 0px;
+<<<<<<< HEAD
     
+=======
+    /* width: 100%; */
+>>>>>>> 1f7566150747b3388136dd73783b17c206e7b39e
 }
 .welcome-main{
     width: 70%;
@@ -87,4 +91,8 @@ slide img{
 .social i:hover{
     opacity: 0.7;
     transform: translate(3px, 3px)
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1f7566150747b3388136dd73783b17c206e7b39e
