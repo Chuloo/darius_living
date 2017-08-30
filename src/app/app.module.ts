@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ReviewsComponent } from './reviews/reviews.component';
-import { SiteService } from './site.service';
+import {UserService} from './services/user.service';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NavComponent } from './nav/nav.component';
 import { MapComponent } from './map/map.component';
@@ -16,6 +16,7 @@ import { RatesComponent } from './rates/rates.component';
 import { AvailabilityComponent } from './availability/availability.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookComponent } from './book/book.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -28,7 +29,8 @@ const appRoutes: Routes =  [
   {path:'rates', component: RatesComponent},
   {path:'availability', component: AvailabilityComponent},
   {path:'contact', component: ContactComponent},
-  {path:'book', component: BookComponent}
+  {path:'book', component: BookComponent},
+  {path:'admindariusliving54321', component: AdminComponent}
 
 
 ]
@@ -46,7 +48,8 @@ const appRoutes: Routes =  [
     RatesComponent,
     AvailabilityComponent,
     ContactComponent,
-    BookComponent
+    BookComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,7 @@ const appRoutes: Routes =  [
     CarouselModule.forRoot()
 
   ],
-  providers: [SiteService],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
