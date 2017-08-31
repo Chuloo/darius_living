@@ -14,9 +14,10 @@ margin: 20px auto;
 
 }
 .semi-section{
-    padding: 20px;
+    padding: 20px 0px;
 }
-div p{
+div h5{
     padding: 0px;
     margin: 0px;
+    font-weight: 800;
 }
