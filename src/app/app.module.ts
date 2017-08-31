@@ -6,7 +6,6 @@ import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
-import { GalleryComponent } from './gallery/gallery.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import {UserService} from './services/user.service';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -17,13 +16,13 @@ import { AvailabilityComponent } from './availability/availability.component';
 import { ContactComponent } from './contact/contact.component';
 import { BookComponent } from './book/book.component';
 import { AdminComponent } from './admin/admin.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
   {path:'overview', component: OverviewComponent},
-  {path:'gallery', component: GalleryComponent},
   {path:'reviews', component: ReviewsComponent},
   {path:'map', component: MapComponent},
   {path:'rates', component: RatesComponent},
@@ -41,7 +40,6 @@ const appRoutes: Routes =  [
     AppComponent,
     HomeComponent,
     OverviewComponent,
-    GalleryComponent,
     ReviewsComponent,
     NavComponent,
     MapComponent,
@@ -56,7 +54,10 @@ const appRoutes: Routes =  [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBjsfJ_bPisR-4GiiLLkpii77_JgFF5ws4'
+    })
 
   ],
   providers: [UserService],

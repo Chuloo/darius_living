@@ -1,19 +1,7 @@
-.size{
+.navbar{
     background-color: #d9dbdd;
-    border-radius: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
     margin-bottom: 0px;
-    min-height: 90px;
-    margin:0px;
-    min-height: 75px;
-    
-    z-index: 2;
-    width:100%;
-
 }
-
 .nav.navbar-nav.navbar-right li a {
     color: hsl(0, 2%, 12%);
     text-align: center;
@@ -31,12 +19,22 @@ a.navbar-brand{
 
 .book{
     background-color: maroon;
+    display: inline-block;
+    width: 100px;
     }
 
-    #white{
+#white{
         color: white;
     }
 
     #white > li a:hover{
     background:transparent !important;
 }
+.nav li a:hover,.nav li a:focus {
+    background-color:inherit;
+    color: rgba(255,255,255,0.8)
+ }
+.collapsed{
+    z-index: 5;
+    color: black;
+} 
