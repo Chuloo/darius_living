@@ -1,0 +1,22 @@
+.carousel{
+width: 65%;
+margin: 20px auto;
+/* max-height: 500px; */
+}
+.main-body{
+    width: 85%;
+    margin: 50px auto;
+}
+.section{
+    padding:40px;
+    margin: 60px 0px;
+    background-color: #F7F7F7;
+
+}
+.semi-section{
+    padding: 20px;
+}
+div p{
+    padding: 0px;
+    margin: 0px;
+}

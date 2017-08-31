@@ -1,16 +1,10 @@
-slide img{
-    width: 100%;
-    height: auto;
-    z-index: -2;
-}
 .container-fluid{
     min-width: 100%;
     font-family: lato, roboto;
     padding: 0px;
 }
 carousel{
-    z-index:-2;
-    /* height: 600px; */
+    width: 100%;
 }
 slide{
     max-height: 600px;
@@ -58,14 +52,12 @@ slide{
     /* padding: 20px auto; */
 }
 .package-main, .contact-main{
-    width: 70%;
+    width: 72%;
     margin: 0px auto;
     padding-top: 30px;
     padding-bottom: 40px;
 }
 .package{
-    min-width: 299px;
-    max-width: 33%;
     display: inline-block;
     padding: 15px 0px 15px 15px;
     margin: 0px;
