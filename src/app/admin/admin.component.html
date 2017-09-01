@@ -1,3 +1,30 @@
-<p>
-  admin works!
-</p>
+<table class="table table-bordered">
+    
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Number</th>
+      <th>Appartment Amount</th>
+      <th>Date From</th>
+      <th>Date To</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let user of users">
+      
+    <tr>
+      <td>{{user.first_name}}</td>
+      <td>{{user.last_name}}</td>
+      <td>{{user.phone_number}}</td>
+      <td>{{user.appartment_amount}}</td>
+      <td>{{user.date_from}}</td>
+      <td>{{user.date_to}}</td>
+    <td>
+      <!-- <button (click) ="updateUser(user)" class="btn btn-warning">Edit</button>  -->
+     <!-- <button (click) ="deleteUser(user._id)" class="btn btn-danger">Delete</button>-->
+    </td>
+      
+    
+  </tbody>
+</table>
+

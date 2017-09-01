@@ -13,8 +13,10 @@ export class BookComponent implements OnInit {
   user: String;
   first_name: String;
   last_name: String;
-  specialty: String;
-  likes: String;
+  phone_number: String;
+  appartment_amount: String;
+  date_from: String;
+  date_to: String;
   
   
 
@@ -32,8 +34,10 @@ export class BookComponent implements OnInit {
     var newUser = {
       first_name: this.first_name,
       last_name: this.last_name,
-      specialty: this.specialty,
-      likes: this.likes
+      phone_number: this.phone_number,
+      appartment_amount: this.appartment_amount,
+       date_from: this.date_from,
+        date_to: this.date_to
     }
 
     this.userService.addUser(newUser)
@@ -42,8 +46,12 @@ export class BookComponent implements OnInit {
       this.users.push(user);
       this.first_name ="";
       this.last_name ="";
-      this.specialty ="";
-      this.likes ="";
+      this.phone_number ="";
+      this.appartment_amount ="";
+      this.date_from ="";
+      this.date_to ="";
+
+
     });
   }
 

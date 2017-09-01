@@ -10,46 +10,30 @@
   </div>
 
   <div class="form-group">
-    <label for="Specialty">Specialty</label>
-    <input type="Specialty" class="form-control"  placeholder="Specialty"  [(ngModel)] ="specialty" name="specialty">
+    <label for="phone_number">Phone Number</label>
+    <input type="phone_number" class="form-control"  placeholder="phone_number"  [(ngModel)] ="phone_number" name="phone_number">
   </div>
 
   <div class="form-group">
-    <label for="Likes">Likes</label>
-    <input type="Likes" class="form-control"  placeholder="Likes"  [(ngModel)] ="likes" name="likes">
+    <label for="appartment_amount">Appartment Amount</label>
+    <input type="text" class="form-control"  placeholder="appartment_amount"  [(ngModel)] ="appartment_amount" name="appartment_amount">
   </div>
+
+  <div class="form-group">
+    <label for="date_from">Date From</label>
+    <input type="date" class="form-control"  placeholder="date_from"  [(ngModel)] ="date_from" name="date_to">
+  </div>
+
+  <div class="form-group">
+    <label for="date_to">Date To</label>
+    <input type="date" class="form-control"  placeholder="date_to"  [(ngModel)] ="date_to" name="date_from">
+  </div>
+
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 
-
-<table class="table table-bordered">
-    
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Specialty</th>
-      <th>Likes</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody *ngFor="let user of users">
-      
-    <tr>
-      <td>{{user.first_name}}</td>
-      <td>{{user.last_name}}</td>
-      <td>{{user.specialty}}</td>
-      <td>{{user.likes}}</td>
-    <td>
-      <!-- <button (click) ="updateUser(user)" class="btn btn-warning">Edit</button>  -->
-      <button (click) ="deleteUser(user._id)" class="btn btn-danger">Delete</button>
-    </td>
-      
-    
-  </tbody>
-</table>
 
 
 
