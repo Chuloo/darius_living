@@ -1,22 +1,58 @@
-<div>
-  <div class="left">
-        <form class="well" (submit) = "addReview($event)">
-          <div class="form-group">
-            <label for="first_name">First Name</label>
-            <input type="first_name" class="form-control"  placeholder="first_name" [(ngModel)] ="first_name" name="first_name">
-          </div>
-
-          <div class="form-group">
-            <label for="last_name">Last Name</label>
-            <input type="last_name" class="form-control"  placeholder="last_name"  [(ngModel)] ="last_name" name="last_name">
-          </div>
-
-          
-          <div class="form-group">
-            <label for="Reviews">Reviews</label>
-            <textarea type="reviews" class="form-control"  placeholder="reviews"  [(ngModel)] ="reviews" name="reviews" cols="30" rows="10"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+<div class="card" style="width: 20rem;">
+  
+  <div class="card-body" *ngFor="let review of reviews">
+    <h4 class="card-title">{{review.first_name || uppercase}} {{review.last_name || uppercase}} said:</h4>
+    
+    <p class="card-text">{{review.review}}.</p>
+    <hr/>
   </div>
+</div>
+
+
+
+
+<form (submit) = "addReview($event)">
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="first_namme">First name</label>
+     <input type="first_name" class="form-control"  placeholder="first_name" [(ngModel)] ="first_name" name="first_name">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="last_name">Last name</label>
+      <input type="last_name" class="form-control"  placeholder="last_name"  [(ngModel)] ="last_name" name="last_name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="Review">Review</label>
+      <textarea type="review" class="form-control"  placeholder="review"  [(ngModel)] ="review" name="review" cols="30" rows="10"></textarea>
+      
+    </div>
+    
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+
+
+      
+      
+   
+  
+
+
+
+
+
+  
+   
+      
+   
+      
+      
+    
+    
+      
+    
+

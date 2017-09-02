@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { OverviewComponent } from './overview/overview.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import {UserService} from './services/user.service';
+import {ReviewsService} from './services/reviews.service';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NavComponent } from './nav/nav.component';
 import { MapComponent } from './map/map.component';
@@ -60,7 +61,7 @@ const appRoutes: Routes =  [
     })
 
   ],
-  providers: [UserService],
+  providers: [UserService,ReviewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
