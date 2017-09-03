@@ -19,7 +19,8 @@ export class ReviewsComponent implements OnInit {
 
     this.reviewsService.getReviews()
     .subscribe(reviews =>{
-      this.reviews = reviews.slice(0, 5);
+      this.reviews = reviews.slice(-10).reverse();
+      
     });
    }
 
