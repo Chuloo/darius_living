@@ -1,4 +1,24 @@
-form{
-    width: 40%;
-    height: 30%x;
+.review-main{
+    width: 70%;
+    margin: 30px auto;
+}
+.display-comment{
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    margin: 30px auto;
+}
+.add-comment{
+    padding:0px 50px 50px 50px;
+    margin: 30px auto;
+    width: 100%;
+    height: auto;
+}
+.btn{
+    margin: 20px 0px;
+}
+.card{
+    background-color: #F7F7F7;
+    padding: 20px 50px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
