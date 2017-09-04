@@ -6,8 +6,13 @@
       <div class="display-comment">  
         <div class="card" *ngFor="let review of reviews">          
           <div class="card-body" >
+
             <h4 class="card-title">{{review.first_name}} {{review.last_name}} said:</h4>
             <p>{{ day | date:'medium' }} </p>
+
+            <h4 class="card-title">{{review.first_name || uppercase}} {{review.last_name || uppercase}} said:</h4>
+            <p>Input Date Here</p>
+
             <p class="card-text">{{review.review}}.</p>
             <!-- <hr/> -->
           </div>
@@ -43,3 +48,27 @@
     </div>
   </div>
 </div>
+
+
+
+
+      
+      
+   
+  
+
+
+
+
+
+  
+   
+      
+   
+      
+      
+    
+    
+      
+    
+
