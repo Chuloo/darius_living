@@ -24,7 +24,7 @@ a.navbar-brand{
     }
 
 #white{
-        color: white;
+        color: #FFFFFF;
     }
 
     #white > li a:hover{
@@ -38,3 +38,6 @@ a.navbar-brand{
     z-index: 5;
     color: black;
 } 
+li a:hover{
+    color: rgba(255, 255, 255, 0.5)
+}
