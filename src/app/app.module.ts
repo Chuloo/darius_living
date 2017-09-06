@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BookComponent } from './book/book.component';
 import { AdminComponent } from './admin/admin.component';
 import { AgmCoreModule } from '@agm/core';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 
@@ -30,7 +31,8 @@ const appRoutes: Routes =  [
   {path:'availability', component: AvailabilityComponent},
   {path:'contact', component: ContactComponent},
   {path:'book', component: BookComponent},
-  {path:'admindariusliving54321', component: AdminComponent}
+  {path:'admindariusliving54321', component: AdminComponent},
+  {path:'gallery', component: GalleryComponent}
 
 
 ]
@@ -48,7 +50,8 @@ const appRoutes: Routes =  [
     AvailabilityComponent,
     ContactComponent,
     BookComponent,
-    AdminComponent
+    AdminComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
