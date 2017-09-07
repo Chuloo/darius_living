@@ -3,15 +3,16 @@
     font-family: lato, roboto;
     padding: 0px;
 }
-carousel{
+.carousel{
     width: 100%;
+    top: 76px;
 }
 slide{
     max-height: 600px;
 }
 .welcome-main{
     width: 70%;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 0px;
     /* min-height: 600px; */
 }
