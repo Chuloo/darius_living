@@ -13,21 +13,16 @@ slide{
     width: 70%;
     margin: 20px auto;
     padding: 0px;
-    min-height: 600px;
+    /* min-height: 600px; */
 }
 .welcome-text{
-    width: 50%;
-    display: inline-block;
-    line-height: 30px;
     margin-top: 50px;
+    line-height: 30px;
     font-size: 1.1em;
 }
 .welcome-images{
-    width: 40%;
-    position: relative;
-    right: 0px;
-    top: 50px;
-    float: right;
+    margin-top: 100px;
+    /* padding-left: 50px; */
 }
 .welcome-images img{
     display: block;
@@ -86,4 +81,12 @@ slide{
 .social i:hover{
     opacity: 0.7;
     transform: translate(3px, 3px)
+}
+.contact-head {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.package .text-center{
+    text-transform: uppercase;
+    font-weight: bold;
 }
