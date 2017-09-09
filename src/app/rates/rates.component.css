@@ -1,0 +1,27 @@
+.rates-main{
+    width: 85%;
+    margin:50px auto;
+    color: #2C2B2B;
+    margin-top:100px
+
+}
+.table-main{
+    background-color:#F7F7F7;
+    padding: 60px 50px;
+}
+.table{
+    background-color:#F7F7F7;
+
+}
+td{
+    margin: 100px 0px;
+}
+.rates{
+    margin:30px 0px;
+}
+.policies{
+    margin-left:8px;
+}
+.policy{
+    margin-top: 100px;
+}

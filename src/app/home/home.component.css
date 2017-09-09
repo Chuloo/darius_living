@@ -1,0 +1,93 @@
+.container-fluid{
+    min-width: 100%;
+    font-family: lato, roboto;
+    padding: 0px;
+}
+.carousel{
+    width: 100%;
+    top: 76px;
+}
+slide{
+    max-height: 600px;
+}
+.welcome-main{
+    width: 70%;
+    margin: 50px auto;
+    padding: 0px;
+    /* min-height: 600px; */
+}
+.welcome-text{
+    margin-top: 50px;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+.welcome-images{
+    margin-top: 100px;
+    /* padding-left: 50px; */
+}
+.welcome-images img{
+    display: block;
+    height: 250px;
+    width: 250px;
+    border: 7px solid #FFFFFF;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 10px #424040;
+}
+.welcome-images .img2{
+    position: relative;
+    top: -10px;
+    left: 10px;
+    margin-top: -35px;
+    margin-left: 15px;
+}
+
+/* Packages section */
+.section2, .social{
+    width: 100%;
+    background-color: #F6F6F9;
+    /* padding: 20px auto; */
+}
+.package-main, .contact-main{
+    width: 72%;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.package{
+    display: inline-block;
+    padding: 15px 0px 15px 15px;
+    margin: 0px;
+    line-height: 25px;
+}
+.contact-main .text-center{
+    padding-bottom: 12px;
+}
+.contact-main p{
+    font-size: 1.1em;
+}
+.social{
+    padding: 30px 0px;
+    margin:20px 0px 40px 0px;
+}
+.social i{
+    padding:0px 20px;
+    color:black;
+    transition: transform 200ms ease-in-out
+}
+.footnote{
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.social i:hover{
+    opacity: 0.7;
+    transform: translate(3px, 3px)
+}
+.contact-head {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.package .text-center{
+    text-transform: uppercase;
+    font-weight: bold;
+}

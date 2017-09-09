@@ -1,0 +1,62 @@
+.container{
+    margin-top:100px;
+}
+.carousel{
+width: 65%;
+margin: 20px auto;
+/* max-height: 500px; */
+}
+.main-body{
+    width: 85%;
+    margin: 50px auto;
+    color: #2C2B2B;
+
+}
+.section{
+    padding:40px;
+    margin: 60px 0px;
+    background-color: #F7F7F7;
+
+}
+.semi-section{
+    padding: 20px 0px;
+
+
+}
+div h5{
+    padding: 0px;
+    margin: 0px;
+    font-weight: 800;
+}
+.feature-text span{
+    padding:0px 10px;
+}
+.amenities1 p, .amenities2 p{
+    padding: 0px;
+    margin: 0px;
+
+
+}
+div h5{
+    padding: 0px;
+    margin: 0px;
+    font-weight: 800;
+}
+.feature-text span{
+    padding:0px 10px;
+}
+.amenities1 p, .amenities2 p{
+    padding: 0px;
+    margin: 0px;
+
+}
+.overview-header{
+    margin-left:10%;
+    color: #2C2B2B;
+
+
+}
+
+
+
+

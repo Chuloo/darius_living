@@ -1,0 +1,73 @@
+<div class="container-fluid">
+
+  <!-- Display Comments -->
+  <div class="review-main">
+    <h2>Reviews</h2>
+      <div class="display-comment">  
+        <div class="card" *ngFor="let review of reviews">          
+          <div class="card-body" >
+
+            <h4 class="card-title">{{review.first_name}} {{review.last_name}} said:</h4>
+            <p>{{ date | date:'medium' }} </p>
+
+            
+
+            <p class="card-text">{{review.review}}.</p>
+            <!-- <hr/> -->
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Input Comments -->
+    <div class="add-comment">
+      <h3>Add Review</h3>
+      <form (submit) = "addReview($event)">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="first_namme" class="name"><h4>Name</h4></label>
+          <input type="first_name" class="form-control"  placeholder="Name" [(ngModel)] ="first_name" name="first_name">
+          </div>
+          <!-- <div class="col-md-6 mb-3">
+            <label for="last_name">Last name</label>
+            <input type="last_name" class="form-control"  placeholder="Last Name"  [(ngModel)] ="last_name" name="last_name">
+          </div> -->
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="Review" class="name"><h4>Review</h4></label>
+            <textarea type="review" class="form-control"  placeholder="Input Review"  [(ngModel)] ="review" name="review" cols="30" rows="10"></textarea>
+            
+          </div>
+          
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit"><h4>Submit</h4></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+      
+      
+   
+  
+
+
+
+
+
+  
+   
+      
+   
+      
+      
+    
+    
+      
+    
+

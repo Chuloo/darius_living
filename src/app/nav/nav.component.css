@@ -1,0 +1,47 @@
+.navbar{
+    background-color: #d9dbdd;
+    margin-bottom: 0px;
+    margin-right:0px;
+    padding-right:0px;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    z-index: 4;
+    width: 100%;
+}
+.nav li a {
+    color: hsl(0, 2%, 30%);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1em;
+    font-family: lato;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand{
+    color: hsl(0, 2%, 30%);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.5em;
+    padding-left: 60px;
+}
+
+.book{
+    background-color: #0B0151;
+    /* display: inline-block; */
+    /* width: 100px; */
+    color: white;
+    padding-left:20px;
+    padding-right:20px;
+}
+.nav li a:hover,.nav li a:focus {
+    background-color:inherit;
+    opacity:0.7;
+ }
+.collapsed{
+    z-index: 5;
+    color: black;
+    margin-top:20px;
+} 

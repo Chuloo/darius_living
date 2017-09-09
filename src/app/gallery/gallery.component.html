@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="gallery-main row">
+    <h2>Gallery</h2>
+
+    <div class="modal fade" id="selectedImageModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img *ngIf="selectedImage" src="{{selectedImage.url}}">
+            <div class="caption-head">
+              <h4><b>{{selectedImage.caption}}</b></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul id="thumbnailsList">
+      <li *ngFor="let image of datasource">
+        <img src="{{image.url}}" class="tn" width="191" height="146" data-toggle="modal" data-target="#selectedImageModal" (click)=setSelectedImage(image)>
+      </li>
+    </ul>
+
+  </div>
+</div>
