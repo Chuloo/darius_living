@@ -23,7 +23,6 @@ import { FooterComponent } from './footer/footer.component';
 
 
 
-
 const appRoutes: Routes =  [
   {path:'', component: HomeComponent},
   {path:'overview', component: OverviewComponent},
@@ -35,7 +34,9 @@ const appRoutes: Routes =  [
   {path:'book', component: BookComponent},
   {path:'admindariusliving54321', component: AdminComponent},
   {path:'gallery', component: GalleryComponent},
-  {path:'footer', component: FooterComponent}
+  {path:'footer', component: FooterComponent},
+  {path:'gallery', component: GalleryComponent}
+
 
 
 ]
@@ -55,7 +56,9 @@ const appRoutes: Routes =  [
     BookComponent,
     AdminComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    GalleryComponent
+
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,10 @@ const appRoutes: Routes =  [
     })
 
   ],
+
   providers: [UserService, ReviewsService],
+
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
