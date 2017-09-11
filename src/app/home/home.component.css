@@ -91,3 +91,20 @@ slide{
     text-transform: uppercase;
     font-weight: bold;
 }
+.dl{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index:3;
+    color: rgba(255, 255, 255, 1);
+}
+.dl h1{
+    font-size: 300%;
+    text-shadow: 0px 0px 4px #191818;
+    text-align: center;
+}
+.dl h4{
+    text-shadow: 0px 0px 4px #191818;
+
+}
