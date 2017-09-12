@@ -1152,23 +1152,23 @@ var UserService = (function () {
         console.log('service initialized');
     }
     UserService.prototype.getUsers = function () {
-        return this.http.get('http://localhost:3000/api/users')
+        return this.http.get('https://dariusliving.herokuapp.com/api/users')
             .map(function (res) { return res.json(); });
     };
     UserService.prototype.addUser = function (newUser) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/api/user', JSON.stringify(newUser), { headers: headers })
+        return this.http.post('https://dariusliving.herokuapp.com/api/user', JSON.stringify(newUser), { headers: headers })
             .map(function (res) { return res.json(); });
     };
     UserService.prototype.deleteUser = function (id) {
-        return this.http.delete('http://localhost:3000/api/user/' + id)
+        return this.http.delete('https://dariusliving.herokuapp.com/api/user/' + id)
             .map(function (res) { return res.json(); });
     };
     UserService.prototype.updateUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.put('http://localhost:3000/api/user/' + user._id, JSON.stringify(user), { headers: headers })
+        return this.http.put('https://dariusliving.herokuapp.com/api/user/' + user._id, JSON.stringify(user), { headers: headers })
             .map(function (res) { return res.json(); });
     };
     return UserService;
