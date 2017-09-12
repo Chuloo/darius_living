@@ -1104,13 +1104,13 @@ var ReviewsService = (function () {
         this.http = http;
     }
     ReviewsService.prototype.getReviews = function () {
-        return this.http.get('http://localhost:3000/api/reviews')
+        return this.http.get('https://dariusliving.herokuapp.com/api/reviews')
             .map(function (res) { return res.json(); });
     };
     ReviewsService.prototype.addReview = function (newReview) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/api/review', JSON.stringify(newReview), { headers: headers })
+        return this.http.post('https://dariusliving.herokuapp.com/api/review', JSON.stringify(newReview), { headers: headers })
             .map(function (res) { return res.json(); });
     };
     return ReviewsService;
