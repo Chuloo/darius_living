@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "ng build --aot -prod && node server.js",
     "ng": "ng",
     "build": "ng build && node server.js",
     "test": "ng test",
