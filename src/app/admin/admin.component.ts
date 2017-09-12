@@ -56,19 +56,19 @@ export class AdminComponent implements OnInit {
   }
 
 
-  deleteUser(id){
-		var users = this.users;
+  //deleteUser(id){
+		//var users = this.users;
 
-		this.userService.deleteUser(id).subscribe(data =>{
-			if(data.n == 1){
-				for(var i = 0;i< users.length; i++){
-					if(users[i]._id ==id){
-						users.splice(i, 1);
-					}
-				}
-			}
-		});
-  }
+		//this.userService.deleteUser(id).subscribe(data =>{
+			//if(data.n == 1){
+			//	for(var i = 0;i< users.length; i++){
+				//	if(users[i]._id ==id){
+					//	users.splice(i, 1);
+				//	}
+				//}
+			//}
+		//});
+ // }
   
   // updateUser(user){
   //   var _user = {

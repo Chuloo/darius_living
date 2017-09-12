@@ -8,7 +8,7 @@
           <div class="card-body" >
 
             <h4 class="card-title">{{review.first_name}} {{review.last_name}} said:</h4>
-            <p>{{ date | date:'medium' }} </p>
+            <p>{{ review.date_to | date:'medium' }} </p>
 
             
 
@@ -42,32 +42,13 @@
           
         </div>
 
+        <div class="form-group hidden">
+    
+    <input type="date" class="form-control"  placeholder="DD/MM/YYYY"  [(ngModel)] ="date_to" name="date_to">
+  </div>
+
         <button class="btn btn-primary btn-block" type="submit"><h4>Submit</h4></button>
       </form>
     </div>
   </div>
 </div>
-
-
-
-
-      
-      
-   
-  
-
-
-
-
-
-  
-   
-      
-   
-      
-      
-    
-    
-      
-    
-

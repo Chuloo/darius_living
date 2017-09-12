@@ -5,5 +5,5 @@ export class User {
     likes: String;
     _id: String;
     public display: boolean = false;
-    timeSent: Date = new Date();
+    date = new Date();
 }
