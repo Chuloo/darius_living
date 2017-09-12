@@ -76,7 +76,7 @@ router.get('/review/:id', function (req, res, next) {
 //add review
 router.post('/review', function(req, res, next){
 		var review = req.body;
-		if(!review.first_name || !(review.last_name + '') || !(review.reviews + '') ){
+		if(!review.first_name || !(review.last_name + '') || !(review.reviews + '') || !(review.date_to + '')){
 				res.status(400);
 				res.json({
 					"error":"bad data"
