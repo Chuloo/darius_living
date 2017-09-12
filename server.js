@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 // API routes
 const api = require('./server/routes/api');
@@ -12,11 +13,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// Use CORS
+app.use(cors());
+
 // Point static path to dist
 app.use(express.static(path.join(__dirname, '/dist')));
-
-// Set our api routes
-app.use('/api', api);
 
 // Add headers
 app.use(function (req, res, next) {
@@ -37,6 +38,9 @@ app.use(function (req, res, next) {
   // Pass to next layer of middleware
   next();
 });
+
+// Set our api routes
+app.use('/api', api);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
