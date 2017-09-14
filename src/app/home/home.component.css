@@ -11,7 +11,7 @@ slide{
     max-height: 600px;
 }
 .welcome-main{
-    width: 70%;
+    width: 72%;
     margin: 50px auto;
     padding: 0px;
     /* min-height: 600px; */
@@ -44,7 +44,7 @@ slide{
 /* Packages section */
 .section2, .social{
     width: 100%;
-    background-color: #F6F6F9;
+    background-color: hsl(240, 20%, 95%);
     /* padding: 20px auto; */
 }
 .package-main, .contact-main{
@@ -107,4 +107,15 @@ slide{
 .dl h4{
     text-shadow: 0px 0px 4px #191818;
 
+}
+@media screen and (max-width:768px) {
+    .dl{
+        display: none;
+    }
+    .welcome-main, .package-main, .contact-main{
+        width: 90%;
+    }
+    .carousel{
+        top: 52px;
+    }
 }

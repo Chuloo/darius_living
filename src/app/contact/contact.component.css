@@ -28,3 +28,8 @@
 .contact-main h3{
     padding-left: 50px;
 }
+@media screen and (max-width:768px){
+    .contact-main{
+        margin-top:76px;
+    }
+}

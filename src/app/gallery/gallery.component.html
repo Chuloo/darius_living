@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="gallery-main row">
+  <div class="gallery-main">
     <h2>Gallery</h2>
 
     <div class="modal fade" id="selectedImageModal">
@@ -7,6 +7,12 @@
         <div class="modal-content">
           <div class="modal-body">
             <img *ngIf="selectedImage" src="{{selectedImage.url}}">
+            <div class="arrow-back btn-back" (click)=navigate(false)>
+              &#8656;
+           </div>
+           <div class="arrow-forward btn-forward" (click)=navigate(true)>
+              &#8658;
+           </div>
             <div class="caption-head">
               <h4><b>{{selectedImage.caption}}</b></h4>
             </div>
@@ -14,11 +20,12 @@
         </div>
       </div>
     </div>
-    <ul id="thumbnailsList">
-      <li *ngFor="let image of datasource">
-        <img src="{{image.url}}" class="tn" width="191" height="146" data-toggle="modal" data-target="#selectedImageModal" (click)=setSelectedImage(image)>
-      </li>
-    </ul>
-
+    <!-- <div class="thumbnail"> -->
+      <ul id="thumbnailsList" class="row">
+        <li *ngFor="let image of datasource" class="col-md-3">
+          <img src="{{image.url}}" class="tn" width="191" height="146" data-toggle="modal" data-target="#selectedImageModal" (click)=setSelectedImage(image)>
+        </li>
+      </ul>
+    <!-- </div> -->
   </div>
 </div>

@@ -8,11 +8,8 @@
           <div class="card-body" >
 
             <h4 class="card-title">{{review.first_name}} {{review.last_name}} said:</h4>
-            <p>{{ review.date_to | date:'medium' }} </p>
-
-            
-
             <p class="card-text">{{review.review}}.</p>
+            <h6 class="review-date">{{ review.date_to | date:'medium' }} </h6>
             <!-- <hr/> -->
           </div>
         </div>

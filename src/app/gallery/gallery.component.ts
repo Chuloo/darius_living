@@ -41,6 +41,12 @@ caption: any;
       { "url": "http://res.cloudinary.com/chuloo/image/upload/v1505143547/DSC_0889_eyvmoc.jpg", "caption": "Champagne" }
     ];
   }
+  navigate(forward){
+    var index = this.datasource.indexOf(this.selectedImage)+(forward ? 1: -1);
+    if(index >= 0 && index < this.datasource.length){
+       this.selectedImage = this.datasource[index];	
+    }
+ }
 
   ngOnInit() {
   }

@@ -1,4 +1,4 @@
-.container{
+.container-fluid{
     margin-top:100px;
 }
 .carousel{
@@ -53,8 +53,11 @@ div h5{
 .overview-header{
     margin-left:10%;
     color: #2C2B2B;
-
-
+}
+@media screen and (max-width:768px){
+    .container-fluid{
+        margin-top: 76px;
+    }
 }
 
 

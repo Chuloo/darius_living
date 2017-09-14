@@ -43,5 +43,26 @@
 .collapsed{
     z-index: 5;
     color: black;
-    margin-top:20px;
+    /* margin-top:20px; */
+}
+.brand-book{
+    display: none;
+    background-color: #0B0151;
+    color: white;
+    padding-left:30px;
+    padding-right:30px;
+    margin-top:0px;
+    margin-bottom: 0px;
 } 
+@media screen and (max-width:768px){
+    .nav{
+        max-height: 300px;
+        overflow-x: scroll;
+    }
+    .brand-main{
+        display: none;
+    }
+    .brand-book{
+        display:inline-block;
+    }
+}

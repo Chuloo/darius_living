@@ -24,28 +24,23 @@
     border-radius: 5px;
 
 }
-.display-comment{
-    width: 100%;
-    padding: 0px 50px 0px 50px;
-    margin: 30px auto;
+.review-date{
+    font-family: lato, roboto;
+    color: hsl(0, 1%, 60%)
 }
-.add-comment{
-    padding:0px 50px 50px 50px;
-    margin: 30px auto;
-    width: 100%;
-    height: auto;
-}
-.btn{
-    margin: 20px 0px;
-}
-.card{
-    background-color: #F7F7F7;
-    padding: 20px 50px;
-    margin: 20px auto;
-    border-radius: 5px;
-}
-
 .hidden {
 visibility: hidden;
 display: none;
+}
+@media screen and (max-width:768px) {
+    .display-comment{
+        padding: 0px;
+    }
+    .add-comment{
+        padding: 0px 0px 50px 0px;
+    }
+    .review-main{
+        width: 85%;
+        margin-top: 76px;
+    }
 }
