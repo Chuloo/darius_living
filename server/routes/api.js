@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 //mongodb
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://marcel:magaji@ds127132.mlab.com:27132/firstmongo', ['users, reviews']);
+var db = mongojs('<data-base-details>', ['users, reviews']);
 
 
 //routes
